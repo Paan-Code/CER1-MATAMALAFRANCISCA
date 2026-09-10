@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <title>Inscripción de Actividades</title>
+</head>
+<body>
+    <!--- Comienzo header -->
+    <header>
+        <a href="paginaPrincipal.html" class="logo">
+            <img src="img/Logo Exxtendido CCPA.png" alt="Logo Centro Cultural">
+        </a>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+            <div class="container">
+                <!-- hamburguesa -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto text-center text-lg-start py-3 py-lg-0 gap-2">
+                        <a href="paginaPrincipal.html#nosotros" class="nav-link">¿Quiénes somos?</a>
+                        <a href="carteleraActividades.html" class="nav-link">Cartelera</a>
+                        <a href="inscripcionActividades.html" class="nav-link">Inscripciones</a>
+                    </div>
+                </div>  
+            </div>
+        </nav>
+    </header>
+    <!--- Final header -->
+
+    <!--- Comienzo main -->
+    <main>
+        <section class="py-5 fondo-inscripcion text-white text-center">
+            <div class="container">
+                <h1 class="display-5">Inscripción a Actividades</h1>
+                <p class="lead">Inscríbete y asegura tu cupo en los talleres y eventos de este mes.</p>
+            </div>
+        </section>
+
+        <!-- inscripción -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-8">
+                        
+                        <div class="card shadow-sm border-0 p-4 p-md-5 bg-white rounded-3">
+                            <h2 class="h4 mb-4 text-center text-dark">Formulario de Registro</h2>
+                            <p class="text-muted small mb-4">* Los campos marcados con un asterisco (*) son obligatorios.</p>
+
+                            <form action="#" method="POST">
+                                
+                                <div class="row g-3">
+                                    
+                                    <!-- nombre completo  -->
+                                    <div class="col-12">
+                                        <label for="nombre" class="form-label fw-semibold">Nombre completo *</label>
+                                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ej: María González Pérez" required>
+                                    </div>
+
+                                    <!-- correo electrónico -->
+                                    <div class="col-12 col-md-6">
+                                        <label for="email" class="form-label fw-semibold">Correo electrónico *</label>
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="ejemplo@correo.cl" required>
+                                    </div>
+
+                                    <!-- teléfono  -->
+                                    <div class="col-12 col-md-6">
+                                        <label for="telefono" class="form-label fw-semibold">Teléfono *</label>
+                                        <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="+56 9 1234 5678" required>
+                                    </div>
+
+                                    <!-- actividad de interés -->
+                                    <div class="col-12 col-md-8">
+                                        <label for="actividad" class="form-label fw-semibold">Actividad de interés *</label>
+                                        <select id="actividad" name="actividad" class="form-select" required>
+                                            <option value="" selected disabled>Selecciona una actividad...</option>
+                                            <option value="Taller de Cerámica Local">Taller de Cerámica Local</option>
+                                            <option value="Ciclo de Cine Independiente">Ciclo de Cine Independiente</option>
+                                            <option value="Exposición: Miradas del Puerto">Exposición: "Miradas del Puerto"</option>
+                                            <option value="Noche de Guitarras: Acústico de Música Porteña">Acústico de Música Porteña</option>
+                                            <option value="Obra: Memorias del Cerro">Obra: "Memorias del Cerro"</option>
+                                            <option value="Concierto: Trova y Folklore">Concierto: Trova y Folklore</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- edad -->
+                                    <div class="col-12 col-md-4">
+                                        <label for="edad" class="form-label fw-semibold">Edad *</label>
+                                        <input type="number" id="edad" name="edad" class="form-control" min="5" max="120" placeholder="Ej: 25" required>
+                                    </div>
+
+                                    <!-- comentarios adicionales -->
+                                    <div class="col-12">
+                                        <label for="comentarios" class="form-label fw-semibold">Comentarios adicionales</label>
+                                        <textarea id="comentarios" name="comentarios" class="form-control" rows="4" placeholder="¿Tienes alguna requerimiento de accesibilidad, consulta o necesidad especial?"></textarea>
+                                    </div>
+
+                                    <!-- aceptación de condiciones -->
+                                    <div class="col-12 my-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="condiciones" name="condiciones" required>
+                                            <label class="form-check-label small text-secondary" for="condiciones">
+                                                Acepto las condiciones de participación y autorizo el uso de mis datos únicamente para la gestión de la actividad. *
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- botón de envío -->
+                                    <div class="col-12 text-center pt-2">
+                                        <button type="submit" class="btn btn-primary btn-lg w-100 fw-bold">Confirmar Inscripción</button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--- Final main -->
+
+    <!--- Comienzo footer -->
+    <footer id="contacto" class="bg-dark text-white pt-5 pb-3">
+        <div class="container footer-grid d-flex flex-column flex-md-row gap-4 mb-4">
+            
+            <div class="col-footer d-flex align-items-center justify-content-center justify-content-md-start">
+                <img src="img/Logo CCPA.png" alt="Logo Puerto Abierto" class="img-fluid" style="max-width: 120px; height: auto; object-fit: contain;">
+            </div>
+
+            <div class="col-footer flex-fill">
+                <h3 class="fs-5 fw-bold">Puerto Abierto</h3>
+                <p class="text-warning mb-1">Centro Cultural</p>
+                <p class="small text-secondary">Un espacio abierto a todas las expresiones artísticas en Valparaíso.</p>
+            </div>
+            
+            <div class="col-footer flex-fill">
+                <h4 class="fs-6 text-warning fw-bold mb-3">Ubicación y Horarios</h4>
+                <p class="mb-1">📍 Av. Altamirano 1250, Valparaíso</p>
+                <p class="mb-0">⏰ Martes a Domingo: 10:00 - 20:00 hrs</p>
+            </div>
+
+            <div class="col-footer flex-fill">
+                <h4 class="fs-6 text-warning fw-bold mb-3">Contacto</h4>
+                <p class="mb-1">✉️ contacto@puertoabierto.cl</p>
+                <p class="mb-0">📞 +56 32 2 123 456</p>
+            </div>
+        </div>
+        
+        <hr class="border-secondary">
+        
+        <div class="text-center small text-secondary pt-2">
+            <p class="mb-0">&copy; 2026 Centro Cultural Puerto Abierto. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!--- Final footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+</body>
+</html>
